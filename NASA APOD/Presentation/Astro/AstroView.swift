@@ -131,6 +131,6 @@ struct AstroView: View {
     }
 }
 
-//#Preview {
-//    AstroView()
-//}
+#Preview {
+    AstroView.preview()
+}

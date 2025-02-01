@@ -11,4 +11,10 @@ extension String {
     func separateBySpace() -> String {
         components(separatedBy: " ").first ?? ""
     }
+    
+    func toDate() -> Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        return dateFormatter.date(from: self) ?? .now
+    }
 }
