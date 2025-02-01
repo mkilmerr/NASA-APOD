@@ -34,7 +34,6 @@
 		F721CEEA2D4E6F6400B7939B /* FavoriteRowView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEE92D4E6F6400B7939B /* FavoriteRowView+ViewModel.swift */; };
 		F721CEED2D4E701D00B7939B /* FavoriteRowView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEEC2D4E701D00B7939B /* FavoriteRowView+Factory.swift */; };
 		F7DFE2F22D4D754E00A2CCB9 /* NASA_APODApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFE2F12D4D754E00A2CCB9 /* NASA_APODApp.swift */; };
-		F7DFE2F42D4D754E00A2CCB9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFE2F32D4D754E00A2CCB9 /* ContentView.swift */; };
 		F7DFE2F62D4D754F00A2CCB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DFE2F52D4D754F00A2CCB9 /* Assets.xcassets */; };
 		F7DFE2F92D4D754F00A2CCB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DFE2F82D4D754F00A2CCB9 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -68,7 +67,6 @@
 		F721CEEC2D4E701D00B7939B /* FavoriteRowView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteRowView+Factory.swift"; sourceTree = "<group>"; };
 		F7DFE2EE2D4D754E00A2CCB9 /* NASA APOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NASA APOD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DFE2F12D4D754E00A2CCB9 /* NASA_APODApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_APODApp.swift; sourceTree = "<group>"; };
-		F7DFE2F32D4D754E00A2CCB9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F7DFE2F52D4D754F00A2CCB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7DFE2F82D4D754F00A2CCB9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -250,7 +248,6 @@
 				F721CEC62D4D8B4A00B7939B /* Utils */,
 				F721CECB2D4DA92400B7939B /* Helpers */,
 				F7DFE2F12D4D754E00A2CCB9 /* NASA_APODApp.swift */,
-				F7DFE2F32D4D754E00A2CCB9 /* ContentView.swift */,
 				F7DFE2F52D4D754F00A2CCB9 /* Assets.xcassets */,
 				F7DFE2F72D4D754F00A2CCB9 /* Preview Content */,
 			);
@@ -345,7 +342,6 @@
 				F721CEB22D4D7EF300B7939B /* Endpoint.swift in Sources */,
 				F721CEBD2D4D7FD400B7939B /* GetApodUseCase.swift in Sources */,
 				F721CECA2D4D8B8300B7939B /* RemoteImage.swift in Sources */,
-				F7DFE2F42D4D754E00A2CCB9 /* ContentView.swift in Sources */,
 				F721CEB02D4D7EF300B7939B /* HTTPClient.swift in Sources */,
 				F721CEBA2D4D7EFF00B7939B /* APOD.swift in Sources */,
 				F721CEE62D4E63CB00B7939B /* FavoriteView+Factory.swift in Sources */,
