@@ -260,6 +260,7 @@
 			children = (
 				F721CF0B2D4E83B800B7939B /* Domain */,
 				F721CEFC2D4E799F00B7939B /* Data */,
+				F721CF002D4E7AFF00B7939B /* Mock */,
 			);
 			path = "NASA APODTests";
 			sourceTree = "<group>";
@@ -321,7 +322,6 @@
 			children = (
 				F7DFE2F02D4D754E00A2CCB9 /* NASA APOD */,
 				F721CEF42D4E799500B7939B /* NASA APODTests */,
-				F721CF002D4E7AFF00B7939B /* Mock */,
 				F7DFE2EF2D4D754E00A2CCB9 /* Products */,
 			);
 			sourceTree = "<group>";
