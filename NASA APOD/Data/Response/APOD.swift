@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct APOD: Decodable {
+struct APOD: Decodable, Equatable {
     let copyright: String?
     let date: String
     let explanation: String
