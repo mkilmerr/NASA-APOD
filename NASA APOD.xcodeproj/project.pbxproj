@@ -43,6 +43,7 @@
 		F721CF0F2D4E919500B7939B /* AstroView+Previewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CF0E2D4E919500B7939B /* AstroView+Previewer.swift */; };
 		F721CF112D4E971000B7939B /* FavoriteView+Previewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CF102D4E971000B7939B /* FavoriteView+Previewer.swift */; };
 		F721CF132D4E979D00B7939B /* StorageManager+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CF122D4E979D00B7939B /* StorageManager+Mock.swift */; };
+		F721CF1B2D4E9BBC00B7939B /* NASA_APODUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CF1A2D4E9BBC00B7939B /* NASA_APODUITests.swift */; };
 		F7DFE2F22D4D754E00A2CCB9 /* NASA_APODApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFE2F12D4D754E00A2CCB9 /* NASA_APODApp.swift */; };
 		F7DFE2F62D4D754F00A2CCB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DFE2F52D4D754F00A2CCB9 /* Assets.xcassets */; };
 		F7DFE2F92D4D754F00A2CCB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DFE2F82D4D754F00A2CCB9 /* Preview Assets.xcassets */; };
@@ -50,6 +51,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		F721CEF72D4E799500B7939B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7DFE2E62D4D754E00A2CCB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7DFE2ED2D4D754E00A2CCB9;
+			remoteInfo = "NASA APOD";
+		};
+		F721CF1E2D4E9BBC00B7939B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F7DFE2E62D4D754E00A2CCB9 /* Project object */;
 			proxyType = 1;
@@ -96,6 +104,8 @@
 		F721CF0E2D4E919500B7939B /* AstroView+Previewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstroView+Previewer.swift"; sourceTree = "<group>"; };
 		F721CF102D4E971000B7939B /* FavoriteView+Previewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteView+Previewer.swift"; sourceTree = "<group>"; };
 		F721CF122D4E979D00B7939B /* StorageManager+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageManager+Mock.swift"; sourceTree = "<group>"; };
+		F721CF182D4E9BBC00B7939B /* NASA APODUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NASA APODUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F721CF1A2D4E9BBC00B7939B /* NASA_APODUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_APODUITests.swift; sourceTree = "<group>"; };
 		F7DFE2EE2D4D754E00A2CCB9 /* NASA APOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NASA APOD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DFE2F12D4D754E00A2CCB9 /* NASA_APODApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_APODApp.swift; sourceTree = "<group>"; };
 		F7DFE2F52D4D754F00A2CCB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,6 +114,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		F721CEF02D4E799500B7939B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F721CF152D4E9BBC00B7939B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -326,11 +343,20 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
+		F721CF192D4E9BBC00B7939B /* NASA APODUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F721CF1A2D4E9BBC00B7939B /* NASA_APODUITests.swift */,
+			);
+			path = "NASA APODUITests";
+			sourceTree = "<group>";
+		};
 		F7DFE2E52D4D754E00A2CCB9 = {
 			isa = PBXGroup;
 			children = (
 				F7DFE2F02D4D754E00A2CCB9 /* NASA APOD */,
 				F721CEF42D4E799500B7939B /* NASA APODTests */,
+				F721CF192D4E9BBC00B7939B /* NASA APODUITests */,
 				F7DFE2EF2D4D754E00A2CCB9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -340,6 +366,7 @@
 			children = (
 				F7DFE2EE2D4D754E00A2CCB9 /* NASA APOD.app */,
 				F721CEF32D4E799500B7939B /* NASA APODTests.xctest */,
+				F721CF182D4E9BBC00B7939B /* NASA APODUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -388,6 +415,24 @@
 			productReference = F721CEF32D4E799500B7939B /* NASA APODTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F721CF172D4E9BBC00B7939B /* NASA APODUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F721CF202D4E9BBC00B7939B /* Build configuration list for PBXNativeTarget "NASA APODUITests" */;
+			buildPhases = (
+				F721CF142D4E9BBC00B7939B /* Sources */,
+				F721CF152D4E9BBC00B7939B /* Frameworks */,
+				F721CF162D4E9BBC00B7939B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F721CF1F2D4E9BBC00B7939B /* PBXTargetDependency */,
+			);
+			name = "NASA APODUITests";
+			productName = "NASA APODUITests";
+			productReference = F721CF182D4E9BBC00B7939B /* NASA APODUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		F7DFE2ED2D4D754E00A2CCB9 /* NASA APOD */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7DFE2FC2D4D754F00A2CCB9 /* Build configuration list for PBXNativeTarget "NASA APOD" */;
@@ -419,6 +464,10 @@
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = F7DFE2ED2D4D754E00A2CCB9;
 					};
+					F721CF172D4E9BBC00B7939B = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = F7DFE2ED2D4D754E00A2CCB9;
+					};
 					F7DFE2ED2D4D754E00A2CCB9 = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -439,12 +488,20 @@
 			targets = (
 				F7DFE2ED2D4D754E00A2CCB9 /* NASA APOD */,
 				F721CEF22D4E799500B7939B /* NASA APODTests */,
+				F721CF172D4E9BBC00B7939B /* NASA APODUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F721CEF12D4E799500B7939B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F721CF162D4E9BBC00B7939B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -474,6 +531,14 @@
 				F721CF0D2D4E840E00B7939B /* StorageItemMock.swift in Sources */,
 				F721CF092D4E7DA000B7939B /* GetApodUseCaseTests.swift in Sources */,
 				F721CF042D4E7B3800B7939B /* APOD+Mock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F721CF142D4E9BBC00B7939B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F721CF1B2D4E9BBC00B7939B /* NASA_APODUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +587,11 @@
 			target = F7DFE2ED2D4D754E00A2CCB9 /* NASA APOD */;
 			targetProxy = F721CEF72D4E799500B7939B /* PBXContainerItemProxy */;
 		};
+		F721CF1F2D4E9BBC00B7939B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7DFE2ED2D4D754E00A2CCB9 /* NASA APOD */;
+			targetProxy = F721CF1E2D4E9BBC00B7939B /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -558,6 +628,40 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NASA APOD.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NASA APOD";
+			};
+			name = Release;
+		};
+		F721CF212D4E9BBC00B7939B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JA3K44V4L9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kilmer.NASA-APODUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "NASA APOD";
+			};
+			name = Debug;
+		};
+		F721CF222D4E9BBC00B7939B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JA3K44V4L9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kilmer.NASA-APODUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "NASA APOD";
 			};
 			name = Release;
 		};
@@ -746,6 +850,15 @@
 			buildConfigurations = (
 				F721CEF92D4E799500B7939B /* Debug */,
 				F721CEFA2D4E799500B7939B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F721CF202D4E9BBC00B7939B /* Build configuration list for PBXNativeTarget "NASA APODUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F721CF212D4E9BBC00B7939B /* Debug */,
+				F721CF222D4E9BBC00B7939B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

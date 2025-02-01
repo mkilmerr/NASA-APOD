@@ -36,6 +36,7 @@ struct FavoriteRowView: View {
             HStack {
                 Text(viewModel.astro.title)
                     .bold()
+                    .accessibilityIdentifier("fav_astro_name")
                 Spacer()
                 Image(systemName: viewModel.didSelect ? "chevron.up": "chevron.down")
                     .contentTransition(.symbolEffect(.replace))

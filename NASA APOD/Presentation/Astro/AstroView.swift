@@ -82,6 +82,7 @@ struct AstroView: View {
                 .padding()
             Text(viewModel.astro?.title ?? "")
                 .font(.headline)
+                .accessibilityIdentifier("astro_name")
             HStack {
                 Text(viewModel.astro?.date ?? "")
                 Button {
@@ -92,6 +93,7 @@ struct AstroView: View {
                         .contentTransition(.symbolEffect(.replace))
                         .symbolEffect(.bounce.down, value: viewModel.markAsFavorite)
                 }
+                .accessibilityIdentifier("favorite_button")
             }
         }
     }
