@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F721CEAE2D4D7EF300B7939B /* FetchApodRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEA62D4D7EF300B7939B /* FetchApodRepository.swift */; };
+		F721CEAF2D4D7EF300B7939B /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEA82D4D7EF300B7939B /* NetworkClient.swift */; };
+		F721CEB02D4D7EF300B7939B /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEA92D4D7EF300B7939B /* HTTPClient.swift */; };
+		F721CEB12D4D7EF300B7939B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEAA2D4D7EF300B7939B /* NetworkError.swift */; };
+		F721CEB22D4D7EF300B7939B /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEAB2D4D7EF300B7939B /* Endpoint.swift */; };
+		F721CEB32D4D7EF300B7939B /* GetApodEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEAD2D4D7EF300B7939B /* GetApodEndpoint.swift */; };
+		F721CEB92D4D7EFF00B7939B /* FetchApodRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEB62D4D7EFF00B7939B /* FetchApodRepositoryProtocol.swift */; };
+		F721CEBA2D4D7EFF00B7939B /* APOD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEB82D4D7EFF00B7939B /* APOD.swift */; };
+		F721CEBD2D4D7FD400B7939B /* GetApodUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEBC2D4D7FD400B7939B /* GetApodUseCase.swift */; };
+		F721CEC12D4D826700B7939B /* AstroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEC02D4D826700B7939B /* AstroView.swift */; };
+		F721CEC32D4D828F00B7939B /* AstroView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEC22D4D828F00B7939B /* AstroView+ViewModel.swift */; };
+		F721CEC52D4D85F100B7939B /* AstroView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEC42D4D85F100B7939B /* AstroView+Factory.swift */; };
+		F721CECA2D4D8B8300B7939B /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEC92D4D8B8300B7939B /* RemoteImage.swift */; };
+		F721CECD2D4DA95700B7939B /* Date+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CECC2D4DA95700B7939B /* Date+Helpers.swift */; };
+		F721CECF2D4DAA3300B7939B /* String+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CECE2D4DAA3300B7939B /* String+Helpers.swift */; };
+		F721CED12D4DAAE600B7939B /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CED02D4DAAE600B7939B /* MediaType.swift */; };
+		F721CED32D4DACBC00B7939B /* WKWebViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CED22D4DACBC00B7939B /* WKWebViewRepresentable.swift */; };
 		F7DFE2F22D4D754E00A2CCB9 /* NASA_APODApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFE2F12D4D754E00A2CCB9 /* NASA_APODApp.swift */; };
 		F7DFE2F42D4D754E00A2CCB9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFE2F32D4D754E00A2CCB9 /* ContentView.swift */; };
 		F7DFE2F62D4D754F00A2CCB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DFE2F52D4D754F00A2CCB9 /* Assets.xcassets */; };
@@ -14,6 +31,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F721CEA62D4D7EF300B7939B /* FetchApodRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchApodRepository.swift; sourceTree = "<group>"; };
+		F721CEA82D4D7EF300B7939B /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		F721CEA92D4D7EF300B7939B /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		F721CEAA2D4D7EF300B7939B /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		F721CEAB2D4D7EF300B7939B /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		F721CEAD2D4D7EF300B7939B /* GetApodEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetApodEndpoint.swift; sourceTree = "<group>"; };
+		F721CEB62D4D7EFF00B7939B /* FetchApodRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchApodRepositoryProtocol.swift; sourceTree = "<group>"; };
+		F721CEB82D4D7EFF00B7939B /* APOD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APOD.swift; sourceTree = "<group>"; };
+		F721CEBC2D4D7FD400B7939B /* GetApodUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetApodUseCase.swift; sourceTree = "<group>"; };
+		F721CEC02D4D826700B7939B /* AstroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroView.swift; sourceTree = "<group>"; };
+		F721CEC22D4D828F00B7939B /* AstroView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstroView+ViewModel.swift"; sourceTree = "<group>"; };
+		F721CEC42D4D85F100B7939B /* AstroView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstroView+Factory.swift"; sourceTree = "<group>"; };
+		F721CEC92D4D8B8300B7939B /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		F721CECC2D4DA95700B7939B /* Date+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Helpers.swift"; sourceTree = "<group>"; };
+		F721CECE2D4DAA3300B7939B /* String+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Helpers.swift"; sourceTree = "<group>"; };
+		F721CED02D4DAAE600B7939B /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
+		F721CED22D4DACBC00B7939B /* WKWebViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewRepresentable.swift; sourceTree = "<group>"; };
 		F7DFE2EE2D4D754E00A2CCB9 /* NASA APOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NASA APOD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DFE2F12D4D754E00A2CCB9 /* NASA_APODApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_APODApp.swift; sourceTree = "<group>"; };
 		F7DFE2F32D4D754E00A2CCB9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +66,114 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F721CEA42D4D7EF300B7939B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F721CEA52D4D7EF300B7939B /* Repository */,
+				F721CEA72D4D7EF300B7939B /* Network */,
+				F721CEAC2D4D7EF300B7939B /* Endpoint */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F721CEA52D4D7EF300B7939B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F721CEA62D4D7EF300B7939B /* FetchApodRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F721CEA72D4D7EF300B7939B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F721CEA82D4D7EF300B7939B /* NetworkClient.swift */,
+				F721CEA92D4D7EF300B7939B /* HTTPClient.swift */,
+				F721CEAA2D4D7EF300B7939B /* NetworkError.swift */,
+				F721CEAB2D4D7EF300B7939B /* Endpoint.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F721CEAC2D4D7EF300B7939B /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				F721CEAD2D4D7EF300B7939B /* GetApodEndpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		F721CEB42D4D7EFF00B7939B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F721CEBB2D4D7F9200B7939B /* UseCase */,
+				F721CEB52D4D7EFF00B7939B /* Repository */,
+				F721CEB72D4D7EFF00B7939B /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F721CEB52D4D7EFF00B7939B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F721CEB62D4D7EFF00B7939B /* FetchApodRepositoryProtocol.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F721CEB72D4D7EFF00B7939B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F721CEB82D4D7EFF00B7939B /* APOD.swift */,
+				F721CED02D4DAAE600B7939B /* MediaType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F721CEBB2D4D7F9200B7939B /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				F721CEBC2D4D7FD400B7939B /* GetApodUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		F721CEBE2D4D81DE00B7939B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F721CEBF2D4D823300B7939B /* Astro */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F721CEBF2D4D823300B7939B /* Astro */ = {
+			isa = PBXGroup;
+			children = (
+				F721CEC02D4D826700B7939B /* AstroView.swift */,
+				F721CEC22D4D828F00B7939B /* AstroView+ViewModel.swift */,
+				F721CEC42D4D85F100B7939B /* AstroView+Factory.swift */,
+			);
+			path = Astro;
+			sourceTree = "<group>";
+		};
+		F721CEC62D4D8B4A00B7939B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F721CEC92D4D8B8300B7939B /* RemoteImage.swift */,
+				F721CED22D4DACBC00B7939B /* WKWebViewRepresentable.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F721CECB2D4DA92400B7939B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F721CECC2D4DA95700B7939B /* Date+Helpers.swift */,
+				F721CECE2D4DAA3300B7939B /* String+Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		F7DFE2E52D4D754E00A2CCB9 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +193,11 @@
 		F7DFE2F02D4D754E00A2CCB9 /* NASA APOD */ = {
 			isa = PBXGroup;
 			children = (
+				F721CEBE2D4D81DE00B7939B /* Presentation */,
+				F721CEB42D4D7EFF00B7939B /* Domain */,
+				F721CEA42D4D7EF300B7939B /* Data */,
+				F721CEC62D4D8B4A00B7939B /* Utils */,
+				F721CECB2D4DA92400B7939B /* Helpers */,
 				F7DFE2F12D4D754E00A2CCB9 /* NASA_APODApp.swift */,
 				F7DFE2F32D4D754E00A2CCB9 /* ContentView.swift */,
 				F7DFE2F52D4D754F00A2CCB9 /* Assets.xcassets */,
@@ -137,8 +284,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F721CED12D4DAAE600B7939B /* MediaType.swift in Sources */,
+				F721CEC32D4D828F00B7939B /* AstroView+ViewModel.swift in Sources */,
+				F721CECD2D4DA95700B7939B /* Date+Helpers.swift in Sources */,
+				F721CED32D4DACBC00B7939B /* WKWebViewRepresentable.swift in Sources */,
+				F721CEB22D4D7EF300B7939B /* Endpoint.swift in Sources */,
+				F721CEBD2D4D7FD400B7939B /* GetApodUseCase.swift in Sources */,
+				F721CECA2D4D8B8300B7939B /* RemoteImage.swift in Sources */,
 				F7DFE2F42D4D754E00A2CCB9 /* ContentView.swift in Sources */,
+				F721CEB02D4D7EF300B7939B /* HTTPClient.swift in Sources */,
+				F721CEBA2D4D7EFF00B7939B /* APOD.swift in Sources */,
+				F721CEAE2D4D7EF300B7939B /* FetchApodRepository.swift in Sources */,
+				F721CECF2D4DAA3300B7939B /* String+Helpers.swift in Sources */,
+				F721CEC12D4D826700B7939B /* AstroView.swift in Sources */,
+				F721CEB12D4D7EF300B7939B /* NetworkError.swift in Sources */,
+				F721CEB32D4D7EF300B7939B /* GetApodEndpoint.swift in Sources */,
 				F7DFE2F22D4D754E00A2CCB9 /* NASA_APODApp.swift in Sources */,
+				F721CEC52D4D85F100B7939B /* AstroView+Factory.swift in Sources */,
+				F721CEAF2D4D7EF300B7939B /* NetworkClient.swift in Sources */,
+				F721CEB92D4D7EFF00B7939B /* FetchApodRepositoryProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
