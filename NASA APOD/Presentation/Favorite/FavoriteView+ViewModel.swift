@@ -12,13 +12,19 @@ extension FavoriteView {
     final class ViewModel: ObservableObject {
         @Published private(set) var favorites: [Astro] = []
         
+        private let storageManager: StorageManagerProtocol
+        
+        init(storageManager: StorageManagerProtocol) {
+            self.storageManager = storageManager
+        }
+        
         @MainActor
         func loadFavoriteAstros(
             context: ModelContext,
             descriptor: FetchDescriptor<Astro>
         ) {
             let storage: StorageParameters<Astro> = (context: context, descriptor: descriptor)
-            favorites = StorageManager().getAll(storage: storage)
+            favorites = storageManager.getAll(storage: storage)
         }
     }
 }

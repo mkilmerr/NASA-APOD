@@ -89,6 +89,7 @@ struct AstroView: View {
                 } label: {
                     Image(systemName: viewModel.markAsFavorite ? "star.fill" : "star")
                         .tint(.yellow)
+                        .contentTransition(.symbolEffect(.replace))
                         .symbolEffect(.bounce.down, value: viewModel.markAsFavorite)
                 }
             }
@@ -100,7 +101,7 @@ struct AstroView: View {
             if let astro = viewModel.astro {
                 switch astro.mediaType {
                 case .video:
-                    WKWebViewRepresentable(videoURL: astro.url)
+                    WKWebViewRepresentable(urlString: astro.url)
                 case .image:
                     RemoteImage(url: URL(string: astro.url))
                 }

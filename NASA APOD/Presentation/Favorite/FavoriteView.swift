@@ -18,18 +18,21 @@ struct FavoriteView: View {
     }
     
     var body: some View {
-        ScrollView(.vertical) {
-            LazyVStack {
-                ForEach(viewModel.favorites) { astro in
-                    Text(astro.title)
+        NavigationView {
+            ScrollView(.vertical) {
+                LazyVStack {
+                    ForEach(viewModel.favorites) { astro in
+                        FavoriteRowView.make(with: astro)
+                    }
                 }
             }
-        }
-        .onAppear {
-            viewModel.loadFavoriteAstros(
-                context: context,
-                descriptor: fetchDescriptor
-            )
+            .navigationTitle("Favorites")
+            .onAppear {
+                viewModel.loadFavoriteAstros(
+                    context: context,
+                    descriptor: fetchDescriptor
+                )
+            }
         }
     }
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 extension AstroView {
-    static func make() -> AstroView {
+    static func make() -> Self {
         let getAstroRepository = FetchApodRepository(
             networkClient: NetworkClient()
         )

@@ -29,6 +29,10 @@
 		F721CEDF2D4E3E0D00B7939B /* FavoriteView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEDE2D4E3E0D00B7939B /* FavoriteView+ViewModel.swift */; };
 		F721CEE22D4E41C100B7939B /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEE12D4E41C100B7939B /* StorageManager.swift */; };
 		F721CEE42D4E621900B7939B /* ViewDidLoadModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEE32D4E621900B7939B /* ViewDidLoadModifier.swift */; };
+		F721CEE62D4E63CB00B7939B /* FavoriteView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEE52D4E63CB00B7939B /* FavoriteView+Factory.swift */; };
+		F721CEE82D4E662700B7939B /* FavoriteRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEE72D4E662700B7939B /* FavoriteRowView.swift */; };
+		F721CEEA2D4E6F6400B7939B /* FavoriteRowView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEE92D4E6F6400B7939B /* FavoriteRowView+ViewModel.swift */; };
+		F721CEED2D4E701D00B7939B /* FavoriteRowView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEEC2D4E701D00B7939B /* FavoriteRowView+Factory.swift */; };
 		F7DFE2F22D4D754E00A2CCB9 /* NASA_APODApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFE2F12D4D754E00A2CCB9 /* NASA_APODApp.swift */; };
 		F7DFE2F42D4D754E00A2CCB9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFE2F32D4D754E00A2CCB9 /* ContentView.swift */; };
 		F7DFE2F62D4D754F00A2CCB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DFE2F52D4D754F00A2CCB9 /* Assets.xcassets */; };
@@ -58,6 +62,10 @@
 		F721CEDE2D4E3E0D00B7939B /* FavoriteView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteView+ViewModel.swift"; sourceTree = "<group>"; };
 		F721CEE12D4E41C100B7939B /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		F721CEE32D4E621900B7939B /* ViewDidLoadModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDidLoadModifier.swift; sourceTree = "<group>"; };
+		F721CEE52D4E63CB00B7939B /* FavoriteView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteView+Factory.swift"; sourceTree = "<group>"; };
+		F721CEE72D4E662700B7939B /* FavoriteRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRowView.swift; sourceTree = "<group>"; };
+		F721CEE92D4E6F6400B7939B /* FavoriteRowView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteRowView+ViewModel.swift"; sourceTree = "<group>"; };
+		F721CEEC2D4E701D00B7939B /* FavoriteRowView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteRowView+Factory.swift"; sourceTree = "<group>"; };
 		F7DFE2EE2D4D754E00A2CCB9 /* NASA APOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NASA APOD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DFE2F12D4D754E00A2CCB9 /* NASA_APODApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_APODApp.swift; sourceTree = "<group>"; };
 		F7DFE2F32D4D754E00A2CCB9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -201,6 +209,10 @@
 			children = (
 				F721CEDC2D4E3DCB00B7939B /* FavoriteView.swift */,
 				F721CEDE2D4E3E0D00B7939B /* FavoriteView+ViewModel.swift */,
+				F721CEE52D4E63CB00B7939B /* FavoriteView+Factory.swift */,
+				F721CEE72D4E662700B7939B /* FavoriteRowView.swift */,
+				F721CEE92D4E6F6400B7939B /* FavoriteRowView+ViewModel.swift */,
+				F721CEEC2D4E701D00B7939B /* FavoriteRowView+Factory.swift */,
 			);
 			path = Favorite;
 			sourceTree = "<group>";
@@ -327,13 +339,16 @@
 				F721CEC32D4D828F00B7939B /* AstroView+ViewModel.swift in Sources */,
 				F721CECD2D4DA95700B7939B /* Date+Helpers.swift in Sources */,
 				F721CED92D4E390C00B7939B /* Astro.swift in Sources */,
+				F721CEEA2D4E6F6400B7939B /* FavoriteRowView+ViewModel.swift in Sources */,
 				F721CED32D4DACBC00B7939B /* WKWebViewRepresentable.swift in Sources */,
+				F721CEED2D4E701D00B7939B /* FavoriteRowView+Factory.swift in Sources */,
 				F721CEB22D4D7EF300B7939B /* Endpoint.swift in Sources */,
 				F721CEBD2D4D7FD400B7939B /* GetApodUseCase.swift in Sources */,
 				F721CECA2D4D8B8300B7939B /* RemoteImage.swift in Sources */,
 				F7DFE2F42D4D754E00A2CCB9 /* ContentView.swift in Sources */,
 				F721CEB02D4D7EF300B7939B /* HTTPClient.swift in Sources */,
 				F721CEBA2D4D7EFF00B7939B /* APOD.swift in Sources */,
+				F721CEE62D4E63CB00B7939B /* FavoriteView+Factory.swift in Sources */,
 				F721CEAE2D4D7EF300B7939B /* FetchApodRepository.swift in Sources */,
 				F721CECF2D4DAA3300B7939B /* String+Helpers.swift in Sources */,
 				F721CEDF2D4E3E0D00B7939B /* FavoriteView+ViewModel.swift in Sources */,
@@ -341,6 +356,7 @@
 				F721CEE42D4E621900B7939B /* ViewDidLoadModifier.swift in Sources */,
 				F721CEB12D4D7EF300B7939B /* NetworkError.swift in Sources */,
 				F721CEB32D4D7EF300B7939B /* GetApodEndpoint.swift in Sources */,
+				F721CEE82D4E662700B7939B /* FavoriteRowView.swift in Sources */,
 				F721CEDD2D4E3DCB00B7939B /* FavoriteView.swift in Sources */,
 				F7DFE2F22D4D754E00A2CCB9 /* NASA_APODApp.swift in Sources */,
 				F721CEC52D4D85F100B7939B /* AstroView+Factory.swift in Sources */,

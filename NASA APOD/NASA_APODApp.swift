@@ -14,11 +14,13 @@ struct NASA_APODApp: App {
             TabView {
                 AstroView.make()
                     .tabItem {
+                        Text("Astros")
                         Image(systemName: "moonphase.waxing.gibbous.inverse")
                     }
                 
-                FavoriteView(viewModel: .init())
+                FavoriteView.make()
                     .tabItem {
+                        Text("Favorites")
                         Image(systemName: "star.circle")
                     }
             }
