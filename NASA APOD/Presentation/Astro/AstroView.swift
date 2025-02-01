@@ -127,6 +127,7 @@ struct AstroView: View {
             displayedComponents: [.date]
         )
         .bold()
+        .padding()
     }
 }
 
