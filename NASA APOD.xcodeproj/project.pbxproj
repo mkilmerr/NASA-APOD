@@ -28,6 +28,7 @@
 		F721CEDD2D4E3DCB00B7939B /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEDC2D4E3DCB00B7939B /* FavoriteView.swift */; };
 		F721CEDF2D4E3E0D00B7939B /* FavoriteView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEDE2D4E3E0D00B7939B /* FavoriteView+ViewModel.swift */; };
 		F721CEE22D4E41C100B7939B /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEE12D4E41C100B7939B /* StorageManager.swift */; };
+		F721CEE42D4E621900B7939B /* ViewDidLoadModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEE32D4E621900B7939B /* ViewDidLoadModifier.swift */; };
 		F7DFE2F22D4D754E00A2CCB9 /* NASA_APODApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFE2F12D4D754E00A2CCB9 /* NASA_APODApp.swift */; };
 		F7DFE2F42D4D754E00A2CCB9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFE2F32D4D754E00A2CCB9 /* ContentView.swift */; };
 		F7DFE2F62D4D754F00A2CCB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DFE2F52D4D754F00A2CCB9 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		F721CEDC2D4E3DCB00B7939B /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		F721CEDE2D4E3E0D00B7939B /* FavoriteView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteView+ViewModel.swift"; sourceTree = "<group>"; };
 		F721CEE12D4E41C100B7939B /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		F721CEE32D4E621900B7939B /* ViewDidLoadModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDidLoadModifier.swift; sourceTree = "<group>"; };
 		F7DFE2EE2D4D754E00A2CCB9 /* NASA APOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NASA APOD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DFE2F12D4D754E00A2CCB9 /* NASA_APODApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_APODApp.swift; sourceTree = "<group>"; };
 		F7DFE2F32D4D754E00A2CCB9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			children = (
 				F721CEC92D4D8B8300B7939B /* RemoteImage.swift */,
 				F721CED22D4DACBC00B7939B /* WKWebViewRepresentable.swift */,
+				F721CEE32D4E621900B7939B /* ViewDidLoadModifier.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				F721CECF2D4DAA3300B7939B /* String+Helpers.swift in Sources */,
 				F721CEDF2D4E3E0D00B7939B /* FavoriteView+ViewModel.swift in Sources */,
 				F721CEC12D4D826700B7939B /* AstroView.swift in Sources */,
+				F721CEE42D4E621900B7939B /* ViewDidLoadModifier.swift in Sources */,
 				F721CEB12D4D7EF300B7939B /* NetworkError.swift in Sources */,
 				F721CEB32D4D7EF300B7939B /* GetApodEndpoint.swift in Sources */,
 				F721CEDD2D4E3DCB00B7939B /* FavoriteView.swift in Sources */,

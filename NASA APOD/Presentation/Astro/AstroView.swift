@@ -34,21 +34,16 @@ struct AstroView: View {
         } message: {
             Text(viewModel.errorMessage)
         }
-        .task {
-            await viewModel.loadAstro(
-                context: context,
-                descriptor: fetchDescriptor
-            )
-        }
-        .onAppear {
-            viewModel.checkIfIsFavorite(
-                context: context,
-                descriptor: fetchDescriptor
-            )
+        .onViewDidLoad {
+            Task {
+                await viewModel.loadAstro(
+                    context: context,
+                    descriptor: fetchDescriptor
+                )
+            }
         }
     }
-    
-    
+
     private func loadAstro(_ date: Date) {
         Task {
             await viewModel.loadAstro(
@@ -84,6 +79,7 @@ struct AstroView: View {
             Text("NASA Astronomy Picture Of The Day")
                 .font(.largeTitle)
                 .bold()
+                .padding()
             Text(viewModel.astro?.title ?? "")
                 .font(.headline)
             HStack {
@@ -97,7 +93,6 @@ struct AstroView: View {
                 }
             }
         }
-        .padding()
     }
     
     private func mediaContent() -> some View {
