@@ -33,12 +33,13 @@
 		F721CEE82D4E662700B7939B /* FavoriteRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEE72D4E662700B7939B /* FavoriteRowView.swift */; };
 		F721CEEA2D4E6F6400B7939B /* FavoriteRowView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEE92D4E6F6400B7939B /* FavoriteRowView+ViewModel.swift */; };
 		F721CEED2D4E701D00B7939B /* FavoriteRowView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEEC2D4E701D00B7939B /* FavoriteRowView+Factory.swift */; };
-		F721CEF62D4E799500B7939B /* NASA_APODTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEF52D4E799500B7939B /* NASA_APODTests.swift */; };
+		F721CEF62D4E799500B7939B /* StorageManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEF52D4E799500B7939B /* StorageManagerTests.swift */; };
 		F721CEFF2D4E79CF00B7939B /* FetchApodRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEFE2D4E79CF00B7939B /* FetchApodRepositoryTests.swift */; };
 		F721CF022D4E7B0B00B7939B /* MockNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CF012D4E7B0B00B7939B /* MockNetworkClient.swift */; };
 		F721CF042D4E7B3800B7939B /* APOD+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CF032D4E7B3800B7939B /* APOD+Mock.swift */; };
 		F721CF062D4E7C7900B7939B /* MockFetchApodRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CF052D4E7C7900B7939B /* MockFetchApodRepository.swift */; };
 		F721CF092D4E7DA000B7939B /* GetApodUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CF082D4E7DA000B7939B /* GetApodUseCaseTests.swift */; };
+		F721CF0D2D4E840E00B7939B /* StorageItemMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CF0C2D4E840E00B7939B /* StorageItemMock.swift */; };
 		F7DFE2F22D4D754E00A2CCB9 /* NASA_APODApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFE2F12D4D754E00A2CCB9 /* NASA_APODApp.swift */; };
 		F7DFE2F62D4D754F00A2CCB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DFE2F52D4D754F00A2CCB9 /* Assets.xcassets */; };
 		F7DFE2F92D4D754F00A2CCB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DFE2F82D4D754F00A2CCB9 /* Preview Assets.xcassets */; };
@@ -82,12 +83,13 @@
 		F721CEE92D4E6F6400B7939B /* FavoriteRowView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteRowView+ViewModel.swift"; sourceTree = "<group>"; };
 		F721CEEC2D4E701D00B7939B /* FavoriteRowView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteRowView+Factory.swift"; sourceTree = "<group>"; };
 		F721CEF32D4E799500B7939B /* NASA APODTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NASA APODTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F721CEF52D4E799500B7939B /* NASA_APODTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_APODTests.swift; sourceTree = "<group>"; };
+		F721CEF52D4E799500B7939B /* StorageManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManagerTests.swift; sourceTree = "<group>"; };
 		F721CEFE2D4E79CF00B7939B /* FetchApodRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchApodRepositoryTests.swift; sourceTree = "<group>"; };
 		F721CF012D4E7B0B00B7939B /* MockNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkClient.swift; sourceTree = "<group>"; };
 		F721CF032D4E7B3800B7939B /* APOD+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APOD+Mock.swift"; sourceTree = "<group>"; };
 		F721CF052D4E7C7900B7939B /* MockFetchApodRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFetchApodRepository.swift; sourceTree = "<group>"; };
 		F721CF082D4E7DA000B7939B /* GetApodUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetApodUseCaseTests.swift; sourceTree = "<group>"; };
+		F721CF0C2D4E840E00B7939B /* StorageItemMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageItemMock.swift; sourceTree = "<group>"; };
 		F7DFE2EE2D4D754E00A2CCB9 /* NASA APOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NASA APOD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DFE2F12D4D754E00A2CCB9 /* NASA_APODApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_APODApp.swift; sourceTree = "<group>"; };
 		F7DFE2F52D4D754F00A2CCB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -256,8 +258,8 @@
 		F721CEF42D4E799500B7939B /* NASA APODTests */ = {
 			isa = PBXGroup;
 			children = (
+				F721CF0B2D4E83B800B7939B /* Domain */,
 				F721CEFC2D4E799F00B7939B /* Data */,
-				F721CEF52D4E799500B7939B /* NASA_APODTests.swift */,
 			);
 			path = "NASA APODTests";
 			sourceTree = "<group>";
@@ -265,8 +267,7 @@
 		F721CEFC2D4E799F00B7939B /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				F721CF072D4E7D8D00B7939B /* UseCase */,
-				F721CF002D4E7AFF00B7939B /* Mock */,
+				F721CF0A2D4E83AB00B7939B /* Storage */,
 				F721CEFD2D4E79B200B7939B /* Repository */,
 			);
 			path = Data;
@@ -286,6 +287,7 @@
 				F721CF012D4E7B0B00B7939B /* MockNetworkClient.swift */,
 				F721CF032D4E7B3800B7939B /* APOD+Mock.swift */,
 				F721CF052D4E7C7900B7939B /* MockFetchApodRepository.swift */,
+				F721CF0C2D4E840E00B7939B /* StorageItemMock.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -298,11 +300,28 @@
 			path = UseCase;
 			sourceTree = "<group>";
 		};
+		F721CF0A2D4E83AB00B7939B /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				F721CEF52D4E799500B7939B /* StorageManagerTests.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		F721CF0B2D4E83B800B7939B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F721CF072D4E7D8D00B7939B /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		F7DFE2E52D4D754E00A2CCB9 = {
 			isa = PBXGroup;
 			children = (
 				F7DFE2F02D4D754E00A2CCB9 /* NASA APOD */,
 				F721CEF42D4E799500B7939B /* NASA APODTests */,
+				F721CF002D4E7AFF00B7939B /* Mock */,
 				F7DFE2EF2D4D754E00A2CCB9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -442,7 +461,8 @@
 				F721CEFF2D4E79CF00B7939B /* FetchApodRepositoryTests.swift in Sources */,
 				F721CF062D4E7C7900B7939B /* MockFetchApodRepository.swift in Sources */,
 				F721CF022D4E7B0B00B7939B /* MockNetworkClient.swift in Sources */,
-				F721CEF62D4E799500B7939B /* NASA_APODTests.swift in Sources */,
+				F721CEF62D4E799500B7939B /* StorageManagerTests.swift in Sources */,
+				F721CF0D2D4E840E00B7939B /* StorageItemMock.swift in Sources */,
 				F721CF092D4E7DA000B7939B /* GetApodUseCaseTests.swift in Sources */,
 				F721CF042D4E7B3800B7939B /* APOD+Mock.swift in Sources */,
 			);
