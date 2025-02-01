@@ -11,7 +11,8 @@ import SwiftData
 struct AstroView: View {
     @StateObject private var viewModel: AstroView.ViewModel
     @Environment(\.modelContext) private var context
-
+    let fetchDescriptor = FetchDescriptor<Astro>()
+ 
     init(viewModel: AstroView.ViewModel) {
         _viewModel = StateObject(wrappedValue: viewModel)
     }
@@ -34,14 +35,27 @@ struct AstroView: View {
             Text(viewModel.errorMessage)
         }
         .task {
-            await viewModel.loadAstro()
+            await viewModel.loadAstro(
+                context: context,
+                descriptor: fetchDescriptor
+            )
+        }
+        .onAppear {
+            viewModel.checkIfIsFavorite(
+                context: context,
+                descriptor: fetchDescriptor
+            )
         }
     }
     
     
     private func loadAstro(_ date: Date) {
         Task {
-            await viewModel.loadAstro(with: date)
+            await viewModel.loadAstro(
+                with: date,
+                context: context,
+                descriptor: fetchDescriptor
+            )
         }
     }
 
@@ -75,11 +89,11 @@ struct AstroView: View {
             HStack {
                 Text(viewModel.astro?.date ?? "")
                 Button {
-                    viewModel.didTapFavorite.toggle()
+                    viewModel.favoriteAstro(context: context, descriptor: fetchDescriptor)
                 } label: {
-                    Image(systemName: "star")
+                    Image(systemName: viewModel.markAsFavorite ? "star.fill" : "star")
                         .tint(.yellow)
-                        .symbolEffect(.bounce.down, value: viewModel.didTapFavorite)
+                        .symbolEffect(.bounce.down, value: viewModel.markAsFavorite)
                 }
             }
         }

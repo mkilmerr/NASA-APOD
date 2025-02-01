@@ -5,7 +5,8 @@
 //  Created by longarinas on 31/01/25.
 //
 
-import SwiftUI
+import Foundation
+import SwiftData
 
 extension AstroView {
     enum ViewState: Equatable {
@@ -27,12 +28,17 @@ extension AstroView {
         @Published var isAnimating = false
         @Published var date = Date().toLocalTime()
         @Published var showAlert: Bool = false
-        @Published var didTapFavorite: Bool = false
+        @Published var markAsFavorite: Bool = false
 
         private let getAstroUseCase: GetApodUseCaseProtocol
+        private let storageManager: StorageManagerProtocol
 
-        init(getAstroUseCase: GetApodUseCaseProtocol) {
+        init(
+            getAstroUseCase: GetApodUseCaseProtocol,
+            storageManager: StorageManagerProtocol
+        ) {
             self.getAstroUseCase = getAstroUseCase
+            self.storageManager = storageManager
         }
 
         var errorMessage: String {
@@ -44,7 +50,7 @@ extension AstroView {
         }
 
         @MainActor
-        func loadAstro(with date: Date? = nil) async {
+        func loadAstro(with date: Date? = nil, context: ModelContext, descriptor: FetchDescriptor<Astro>) async {
             viewState = .loading
             do {
                 astro = try await getAstroUseCase.execute(
@@ -52,6 +58,10 @@ extension AstroView {
                 ).mapToAstro()
                 viewState = .success
                 isAnimating.toggle()
+                checkIfIsFavorite(
+                    context: context,
+                    descriptor: descriptor
+                )
             } catch {
                 setError(with: date)
                 showAlert = true
@@ -68,6 +78,20 @@ extension AstroView {
             } else {
                 viewState = .error(.general)
             }
+        }
+        
+        @MainActor
+        func favoriteAstro(context: ModelContext, descriptor: FetchDescriptor<Astro>) {
+            guard let astro else { return }
+            let storage: StorageParameters<Astro> = (context: context, descriptor: descriptor)
+            markAsFavorite = storageManager.add(storage: storage, item: astro)
+        }
+        
+        @MainActor
+        func checkIfIsFavorite(context: ModelContext, descriptor: FetchDescriptor<Astro>) {
+            guard let astro else { return }
+            let storage: StorageParameters<Astro> = (context: context, descriptor: descriptor)
+            markAsFavorite = storageManager.checkIfItemIsAlreadyAdded(storage: storage, item: astro)
         }
     }
 }

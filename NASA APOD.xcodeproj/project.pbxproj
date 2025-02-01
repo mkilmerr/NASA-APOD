@@ -25,6 +25,9 @@
 		F721CED12D4DAAE600B7939B /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CED02D4DAAE600B7939B /* MediaType.swift */; };
 		F721CED32D4DACBC00B7939B /* WKWebViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CED22D4DACBC00B7939B /* WKWebViewRepresentable.swift */; };
 		F721CED92D4E390C00B7939B /* Astro.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CED82D4E390C00B7939B /* Astro.swift */; };
+		F721CEDD2D4E3DCB00B7939B /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEDC2D4E3DCB00B7939B /* FavoriteView.swift */; };
+		F721CEDF2D4E3E0D00B7939B /* FavoriteView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEDE2D4E3E0D00B7939B /* FavoriteView+ViewModel.swift */; };
+		F721CEE22D4E41C100B7939B /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CEE12D4E41C100B7939B /* StorageManager.swift */; };
 		F7DFE2F22D4D754E00A2CCB9 /* NASA_APODApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFE2F12D4D754E00A2CCB9 /* NASA_APODApp.swift */; };
 		F7DFE2F42D4D754E00A2CCB9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFE2F32D4D754E00A2CCB9 /* ContentView.swift */; };
 		F7DFE2F62D4D754F00A2CCB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DFE2F52D4D754F00A2CCB9 /* Assets.xcassets */; };
@@ -50,6 +53,9 @@
 		F721CED02D4DAAE600B7939B /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
 		F721CED22D4DACBC00B7939B /* WKWebViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewRepresentable.swift; sourceTree = "<group>"; };
 		F721CED82D4E390C00B7939B /* Astro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astro.swift; sourceTree = "<group>"; };
+		F721CEDC2D4E3DCB00B7939B /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		F721CEDE2D4E3E0D00B7939B /* FavoriteView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteView+ViewModel.swift"; sourceTree = "<group>"; };
+		F721CEE12D4E41C100B7939B /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		F7DFE2EE2D4D754E00A2CCB9 /* NASA APOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NASA APOD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DFE2F12D4D754E00A2CCB9 /* NASA_APODApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_APODApp.swift; sourceTree = "<group>"; };
 		F7DFE2F32D4D754E00A2CCB9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +77,7 @@
 		F721CEA42D4D7EF300B7939B /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				F721CEE02D4E41AF00B7939B /* Storage */,
 				F721CEDA2D4E3C4D00B7939B /* Response */,
 				F721CEA52D4D7EF300B7939B /* Repository */,
 				F721CEA72D4D7EF300B7939B /* Network */,
@@ -144,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				F721CEBF2D4D823300B7939B /* Astro */,
+				F721CEDB2D4E3DB900B7939B /* Favorite */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -183,6 +191,23 @@
 				F721CEB82D4D7EFF00B7939B /* APOD.swift */,
 			);
 			path = Response;
+			sourceTree = "<group>";
+		};
+		F721CEDB2D4E3DB900B7939B /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				F721CEDC2D4E3DCB00B7939B /* FavoriteView.swift */,
+				F721CEDE2D4E3E0D00B7939B /* FavoriteView+ViewModel.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		F721CEE02D4E41AF00B7939B /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				F721CEE12D4E41C100B7939B /* StorageManager.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		F7DFE2E52D4D754E00A2CCB9 = {
@@ -308,13 +333,16 @@
 				F721CEBA2D4D7EFF00B7939B /* APOD.swift in Sources */,
 				F721CEAE2D4D7EF300B7939B /* FetchApodRepository.swift in Sources */,
 				F721CECF2D4DAA3300B7939B /* String+Helpers.swift in Sources */,
+				F721CEDF2D4E3E0D00B7939B /* FavoriteView+ViewModel.swift in Sources */,
 				F721CEC12D4D826700B7939B /* AstroView.swift in Sources */,
 				F721CEB12D4D7EF300B7939B /* NetworkError.swift in Sources */,
 				F721CEB32D4D7EF300B7939B /* GetApodEndpoint.swift in Sources */,
+				F721CEDD2D4E3DCB00B7939B /* FavoriteView.swift in Sources */,
 				F7DFE2F22D4D754E00A2CCB9 /* NASA_APODApp.swift in Sources */,
 				F721CEC52D4D85F100B7939B /* AstroView+Factory.swift in Sources */,
 				F721CEAF2D4D7EF300B7939B /* NetworkClient.swift in Sources */,
 				F721CEB92D4D7EFF00B7939B /* FetchApodRepositoryProtocol.swift in Sources */,
+				F721CEE22D4E41C100B7939B /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

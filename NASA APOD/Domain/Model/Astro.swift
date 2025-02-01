@@ -9,8 +9,7 @@ import Foundation
 import SwiftData
 
 @Model
-final class Astro {
-    let id: UUID = UUID()
+final class Astro: Equatable {
     let date: String
     let about: String
     var mediaType: MediaType
@@ -29,5 +28,15 @@ final class Astro {
         self.mediaType = mediaType
         self.title = title
         self.url = url
+    }
+}
+
+extension Astro {
+    public static func == (lhs: Astro, rhs: Astro) -> Bool {
+        return lhs.date == rhs.date &&
+               lhs.about == rhs.about &&
+               lhs.mediaType == rhs.mediaType &&
+               lhs.title == rhs.title &&
+               lhs.url == rhs.url
     }
 }

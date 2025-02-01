@@ -17,8 +17,11 @@ extension AstroView {
             repository: getAstroRepository
         )
         
+        let storageManager = StorageManager()
+        
         let viewModel = AstroView.ViewModel(
-            getAstroUseCase: getAstroUseCase
+            getAstroUseCase: getAstroUseCase,
+            storageManager: storageManager
         )
         
         return AstroView(viewModel: viewModel)

@@ -16,6 +16,11 @@ struct NASA_APODApp: App {
                     .tabItem {
                         Image(systemName: "moonphase.waxing.gibbous.inverse")
                     }
+                
+                FavoriteView(viewModel: .init())
+                    .tabItem {
+                        Image(systemName: "star.circle")
+                    }
             }
         }
         .modelContainer(for: Astro.self)
