@@ -28,6 +28,7 @@ struct RemoteImage: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .cornerRadius(4)
+                            .frame(maxWidth: .infinity, maxHeight: 300)
                     case .failure(_):
                         placeHolder()
                     @unknown default:

@@ -18,5 +18,6 @@ struct NASA_APODApp: App {
                     }
             }
         }
+        .modelContainer(for: Astro.self)
     }
 }

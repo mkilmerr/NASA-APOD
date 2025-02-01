@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct AstroView: View {
     @StateObject private var viewModel: AstroView.ViewModel
-    let videoURL = "https://www.youtube.com/embed/7QB_MOemCqs?rel=0"
+    @Environment(\.modelContext) private var context
 
     init(viewModel: AstroView.ViewModel) {
         _viewModel = StateObject(wrappedValue: viewModel)
@@ -71,8 +72,16 @@ struct AstroView: View {
                 .bold()
             Text(viewModel.astro?.title ?? "")
                 .font(.headline)
-            Text(viewModel.astro?.date ?? "")
-          
+            HStack {
+                Text(viewModel.astro?.date ?? "")
+                Button {
+                    viewModel.didTapFavorite.toggle()
+                } label: {
+                    Image(systemName: "star")
+                        .tint(.yellow)
+                        .symbolEffect(.bounce.down, value: viewModel.didTapFavorite)
+                }
+            }
         }
         .padding()
     }
@@ -94,7 +103,7 @@ struct AstroView: View {
     private func footer() -> some View {
         VStack(spacing: 16) {
             mediaContent()
-            Text(viewModel.astro?.explanation ?? "")
+            Text(viewModel.astro?.about ?? "")
                 .font(.subheadline)
         }
         .padding(.bottom, 16)
@@ -107,6 +116,7 @@ struct AstroView: View {
             selection: $viewModel.date,
             displayedComponents: [.date]
         )
+        .bold()
     }
 }
 

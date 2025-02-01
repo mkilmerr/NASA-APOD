@@ -24,6 +24,7 @@
 		F721CECF2D4DAA3300B7939B /* String+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CECE2D4DAA3300B7939B /* String+Helpers.swift */; };
 		F721CED12D4DAAE600B7939B /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CED02D4DAAE600B7939B /* MediaType.swift */; };
 		F721CED32D4DACBC00B7939B /* WKWebViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CED22D4DACBC00B7939B /* WKWebViewRepresentable.swift */; };
+		F721CED92D4E390C00B7939B /* Astro.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721CED82D4E390C00B7939B /* Astro.swift */; };
 		F7DFE2F22D4D754E00A2CCB9 /* NASA_APODApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFE2F12D4D754E00A2CCB9 /* NASA_APODApp.swift */; };
 		F7DFE2F42D4D754E00A2CCB9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFE2F32D4D754E00A2CCB9 /* ContentView.swift */; };
 		F7DFE2F62D4D754F00A2CCB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DFE2F52D4D754F00A2CCB9 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		F721CECE2D4DAA3300B7939B /* String+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Helpers.swift"; sourceTree = "<group>"; };
 		F721CED02D4DAAE600B7939B /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
 		F721CED22D4DACBC00B7939B /* WKWebViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewRepresentable.swift; sourceTree = "<group>"; };
+		F721CED82D4E390C00B7939B /* Astro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astro.swift; sourceTree = "<group>"; };
 		F7DFE2EE2D4D754E00A2CCB9 /* NASA APOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NASA APOD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DFE2F12D4D754E00A2CCB9 /* NASA_APODApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_APODApp.swift; sourceTree = "<group>"; };
 		F7DFE2F32D4D754E00A2CCB9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 		F721CEA42D4D7EF300B7939B /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				F721CEDA2D4E3C4D00B7939B /* Response */,
 				F721CEA52D4D7EF300B7939B /* Repository */,
 				F721CEA72D4D7EF300B7939B /* Network */,
 				F721CEAC2D4D7EF300B7939B /* Endpoint */,
@@ -124,8 +127,7 @@
 		F721CEB72D4D7EFF00B7939B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F721CEB82D4D7EFF00B7939B /* APOD.swift */,
-				F721CED02D4DAAE600B7939B /* MediaType.swift */,
+				F721CED82D4E390C00B7939B /* Astro.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +174,15 @@
 				F721CECE2D4DAA3300B7939B /* String+Helpers.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F721CEDA2D4E3C4D00B7939B /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				F721CED02D4DAAE600B7939B /* MediaType.swift */,
+				F721CEB82D4D7EFF00B7939B /* APOD.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 		F7DFE2E52D4D754E00A2CCB9 = {
@@ -287,6 +298,7 @@
 				F721CED12D4DAAE600B7939B /* MediaType.swift in Sources */,
 				F721CEC32D4D828F00B7939B /* AstroView+ViewModel.swift in Sources */,
 				F721CECD2D4DA95700B7939B /* Date+Helpers.swift in Sources */,
+				F721CED92D4E390C00B7939B /* Astro.swift in Sources */,
 				F721CED32D4DACBC00B7939B /* WKWebViewRepresentable.swift in Sources */,
 				F721CEB22D4D7EF300B7939B /* Endpoint.swift in Sources */,
 				F721CEBD2D4D7FD400B7939B /* GetApodUseCase.swift in Sources */,

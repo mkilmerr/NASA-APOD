@@ -23,10 +23,11 @@ extension AstroView {
 extension AstroView {
     final class ViewModel: ObservableObject {
         @Published private(set) var viewState: ViewState = .loading
-        @Published private(set) var astro: APOD?
+        @Published private(set) var astro: Astro?
         @Published var isAnimating = false
         @Published var date = Date().toLocalTime()
         @Published var showAlert: Bool = false
+        @Published var didTapFavorite: Bool = false
 
         private let getAstroUseCase: GetApodUseCaseProtocol
 
@@ -48,7 +49,7 @@ extension AstroView {
             do {
                 astro = try await getAstroUseCase.execute(
                     date: date?.description.separateBySpace()
-                )
+                ).mapToAstro()
                 viewState = .success
                 isAnimating.toggle()
             } catch {

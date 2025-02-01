@@ -27,4 +27,15 @@ struct APOD: Decodable {
         case title
         case url
     }
+    
+    
+    func mapToAstro() -> Astro {
+        .init(
+            date: date, 
+            about: explanation,
+            mediaType: mediaType,
+            title: title,
+            url: url
+        )
+    }
 }
