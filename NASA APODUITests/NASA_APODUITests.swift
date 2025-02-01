@@ -45,6 +45,23 @@ final class NASA_APODUITests: XCTestCase {
         favoriteButton.tap()
     }
     
+    func testFavorite_expand_item_and_back_to_initial_state() {
+        let favoriteButton = app.buttons["favorite_button"]
+        favoriteButton.tap()
+
+        let tabBar = app.tabBars["Tab Bar"]
+        tabBar.buttons["Favorites"].tap()
+     
+        let titleSectionButton = app.buttons["title_section_button"]
+        titleSectionButton.tap()
+        let seeMore = app.buttons["see_more"]
+        
+        XCTAssertTrue(seeMore.exists)
+        
+        tabBar.buttons["Astros"].tap()
+        favoriteButton.tap()
+    }
+    
     func testNonFavorite_and_back_to_initial_state() {
         let tabBar = app.tabBars["Tab Bar"]
         tabBar.buttons["Favorites"].tap()

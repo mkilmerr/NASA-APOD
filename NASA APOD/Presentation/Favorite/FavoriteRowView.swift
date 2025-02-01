@@ -43,6 +43,7 @@ struct FavoriteRowView: View {
             }
             .padding()
         }
+        .accessibilityIdentifier("title_section_button")
     }
     
     private func aboutSection() -> some View {
@@ -52,6 +53,7 @@ struct FavoriteRowView: View {
                     viewModel.didSelectSeeMore.toggle()
                 } label: {
                     Text("See more")
+                        .accessibilityIdentifier("see_more")
                 }
                 .bold()
                 
