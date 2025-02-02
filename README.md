@@ -7,9 +7,15 @@
 
 - SwiftUI
 - SwiftData
+- XCTest
 
+## Tests 🧪
 
+The project has unit and UI tests
 
+To run all tests: ```cmd + u```
+
+Test covarage (unit) : ```Repositories, UseCases and Storage Manager```
 
 ## Screenshots
 
@@ -22,7 +28,6 @@
 <img src="https://github.com/user-attachments/assets/05011e79-9a80-463a-829a-0150f345daf8" width="200" />
 
 
-
 ## Light mode ☀️
 
 <img src="https://github.com/user-attachments/assets/b51a5c1b-259b-4535-a8ab-8494e6e11cee" width="200" />
@@ -31,7 +36,6 @@
 <img src="https://github.com/user-attachments/assets/89ff0dd6-9804-4870-b732-dc9abbf05bb0" width="200" />
 <img src="https://github.com/user-attachments/assets/2199b693-d7ee-45db-953a-65527b16f27e" width="200" />
 <img src="https://github.com/user-attachments/assets/33d11ecd-970b-4f95-9a83-f4ed0717e767" width="200" />
-
 
 
 
