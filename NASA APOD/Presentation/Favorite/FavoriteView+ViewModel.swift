@@ -18,6 +18,10 @@ extension FavoriteView {
             self.storageManager = storageManager
         }
         
+        var showEmptyMessage: Bool {
+            favorites.isEmpty
+        }
+        
         @MainActor
         func loadFavoriteAstros(
             context: ModelContext,
