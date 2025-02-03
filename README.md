@@ -9,6 +9,23 @@
 - SwiftData
 - XCTest
 
+## API KEY
+Get you api key to run the project
+
+Set your key in ```GetApodEndpoint```
+
+```swift
+// MARK: - Query
+extension GetApodEndpoint {
+    struct Query {
+        let apiKey: String = "<YOUR API KEY>"
+        let date: String?
+    }
+}
+
+```
+
+
 ## Tests 🧪
 
 The project has unit and UI tests
