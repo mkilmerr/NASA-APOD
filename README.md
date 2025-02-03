@@ -10,7 +10,7 @@
 - XCTest
 
 ## API KEY
-Get you api key to run the project
+Get your api key to run the project
 
 Set your key in ```GetApodEndpoint```
 
