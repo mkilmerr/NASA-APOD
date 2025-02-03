@@ -40,7 +40,7 @@ struct GetApodEndpoint: Endpoint {
 // MARK: - Query
 extension GetApodEndpoint {
     struct Query {
-        let apiKey: String = "HiVYqtT14xzujRMbI4FMgzV2QPwRx5msn4WPVcKM"
+        let apiKey: String = "<YOUR API KEY>"
         let date: String?
     }
 }
